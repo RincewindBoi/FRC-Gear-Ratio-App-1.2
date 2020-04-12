@@ -10,8 +10,7 @@ public class Mechanisms {
 
     
     public Mechanisms() {
-        mechanismList.add((new MechanismsHandler("Drivetrain (2 Motor)")));
-        mechanismList.add((new MechanismsHandler("Drivetrain (3 Motor)")));
+        mechanismList.add((new MechanismsHandler("Drivetrain)")));
         mechanismList.add((new MechanismsHandler("Collector")));
         mechanismList.add((new MechanismsHandler("Linear Mechanism")));
         mechanismList.add((new MechanismsHandler("Rotary Mechanism")));

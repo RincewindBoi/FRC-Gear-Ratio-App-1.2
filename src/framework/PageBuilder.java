@@ -79,29 +79,15 @@ public class PageBuilder extends JFrame implements ActionListener, ChangeListene
 			MotorHandler motor= iterator.next();
 			motordropdown.addItem(motor.name); //= new JComboBox((ComboBoxModel) motor);
 		}
-		Iterator<InterfaceHandler> iterator2 = interfaces.interfaceList.iterator();
-		while (iterator2.hasNext()) {
-			InterfaceHandler interfaces = iterator2.next();
-			interface0.addItem(interfaces.name);
-		}
-		Iterator<InterfaceHandler2> iterator3 = interfaces2.interfaceList2.iterator();
-		while (iterator3.hasNext()) {
-			InterfaceHandler2 interfaces2 = iterator3.next();
-			interface1.addItem(interfaces2.name);
-			
-		}
+
 		
 		
 		motordropdown.addActionListener(this);
-		interface0.addActionListener(this);
-		interface1.addActionListener(this);
 		loadInput.addChangeListener(this);
 		setSize(new Dimension(1920, 100));
 		setTitle("Gear Ratio App");
 		setLayout(new GridLayout(2, 3, 0, 0));
 		add(motordropdown);
-		add(interface0);
-		add(interface1);
 		add(lblText1);
 		add(lblText2);
 		add(lblText3);
@@ -148,8 +134,8 @@ public class PageBuilder extends JFrame implements ActionListener, ChangeListene
 			ratioindex0 = interface0.getSelectedIndex();
 			ratioindex1 = interface1.getSelectedIndex();
 
-			ratio0 = interfaces.interfaceList.get(ratioindex0).toothcount;
-			ratio1 = interfaces2.interfaceList2.get(ratioindex1).toothcount;
+			ratio0 = interfaces.interfaceList.get(ratioindex0).ratiospread;
+			ratio1 = interfaces2.interfaceList2.get(ratioindex1).ratiospread;
 			
 			weight0 = motor.motorlist.get(motorindex).weight_lbs;
 			weight1 = interfaces.interfaceList.get(ratioindex0).weight_lbs;
