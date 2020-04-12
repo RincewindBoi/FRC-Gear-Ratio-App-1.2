@@ -15,6 +15,8 @@ public Motor() {
 	motorlist.add(new MotorHandler("BAG Motor", "Vex Pro", "217-3351", 0.71, 29.99, 13810, 1.8, 53, 0.4));
 	motorlist.add(new MotorHandler("BB RS-550", "Bane Bots", "M5-RS555-12", 0.47, 7.25, 19300, 1.4, 85, 0.488));
 	motorlist.add(new MotorHandler("NEO", "Rev Robotics", "REV-21-1650", 0.94, 40.00, 5676, 1.8, 105, 2.6));
+	motorlist.add(new MotorHandler("NEO_550", "Rev Robotics", "REV-21-1651", 0.313, 25.00, 11000.0, 1.4, 100.0, 0.97));
+	motorlist.add(new MotorHandler("Falcon_500", "Vex Pro", "217-6515", 1.1, 139.99, 6380.0, 1.5, 257, 4.69));
 	}
 }
 	
